@@ -1,8 +1,8 @@
-import os
-import random
-import sys
+import os       #provide functions for creating and removing directory
+import random   #use to generate random numbers
+import sys      #provide imformation about constants and functions and methods of python interpreter
 import datetime
-import webbrowser
+import webbrowser   
 import subprocess
 
 from gtts import gTTS   # converts text to speech
@@ -10,15 +10,15 @@ import pyttsx3
 import playsound as playsound   # to play Audio
 
 import speech_recognition as sr  # converts speech to text
-import wikipedia
-import pywhatkit
-import pyjokes
+import wikipedia       #wikipedia    
+import pywhatkit       #youtube
+import pyjokes          #jokes
 
 
-from tkinter import *
-from PIL import ImageTk, Image
+from tkinter import *       #it is standard GUI library
+from PIL import ImageTk, Image     
 
-engine = pyttsx3.init('sapi5')
+engine = pyttsx3.init('sapi5')      #create engine ,having female voice
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
